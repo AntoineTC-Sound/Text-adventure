@@ -1,0 +1,86 @@
+#include <iostream>
+#include <string>
+
+int main() {
+
+std::cout << "Hello adventure, welcome to the Adventure Game!\nAre you ready to face the danger?\n";
+std::cout << "1)Yes\n" << "2)No\n";
+
+int ans1;
+std::cin >> ans1;
+
+while (ans1 != 1)
+{
+  std::cout << "\nDont be a coward and say Yes!\n";
+  std::cin >> ans1;
+}
+if(ans1 == 1)
+{
+  std::cout << "\nOkay, lets start!\n";
+}
+
+std::cout << "\nYou are walking around the mountain and you see a warrior cleaning his axe.\nWhat you gonna do?\n";
+std::cout << "1)Run Away\n" << "2)Ask him where to go\n" << "3)Attack him\n";
+
+int ans2;
+std::cin >> ans2;
+
+if (ans2 == 1){
+  std::cout << "\nHe watched you and starts to running towards you\n";
+}
+
+else if (ans2 == 2){
+  std::cout << "\nHe is violent with you and threatens you\n";
+  std::cout << "1)Combat him\n" << "2)Run Away\n";
+  
+  int ans2b;
+  std::cin >> ans2b;
+
+  if (ans2b == 1)
+  {
+    std::cout << "\nHe punched you and you start to run\n";
+    std::cout << "He start to run towards you\n";
+  }
+  else if (ans2b == 2)
+  {
+    std::cout << "\nHe start to run towards you\n";
+  }
+}
+
+else if (ans2 == 3)
+{
+  std::cout << "\nHe punched you and you start to run\n";
+  std::cout << "He start to run towards you\n";
+}
+
+std::cout << "\nYou must to choose fast where to run!\n Hurry up! Where do you go?!\n";
+std::cout << "1)Right way\n" << "2)Left way\n";
+
+int ans3;
+std::cin >> ans3;
+
+if (ans3 == 1)
+{
+  std::cout << "\nA wall blocks your path and the warrior cuts you with his axe, I'm sorry.\nYOU LOSE THE GAME!\n";
+}
+
+else if (ans3 == 2)
+{
+  std::cout << "\nYou see a spear in the way.\n What you gonna do?";
+  std::cout << "\n1)Throw it\n" << "2)Nail it\n";
+
+  int ans3b;
+  std::cin >> ans3b;
+
+  if (ans3b == 1){
+    std::cout << "\nGood job! The spear pierces his stomach!\n";
+    std::cout << "YOU DEFEAT THE FINAL BOSS\n";
+  }
+
+  if (ans3b == 2){
+    std::cout << "\nThe warrior is faster than you and cuts you with his axe, I'm sorry.\nYOU LOSE THE GAME!\n";
+  }
+}
+
+
+}
